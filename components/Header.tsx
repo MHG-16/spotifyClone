@@ -92,7 +92,7 @@ const Header: React.FC<HeaderProps> = ({
                             </div>
                             <div>
                                 <Button
-                                    onClick={() => {}} 
+                                    onClick={onOpen} 
                                     className="bg-white px-6 py-2 font-medium">
                                     Log in 
                                 </Button>
