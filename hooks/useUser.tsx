@@ -61,7 +61,8 @@ export const MyUserContextProvider = (props: Props ) => {
             setSubscription(null);
             setUserDetails(null);
         }
-    }, [isLoadingData, isLoadingUser, subscription, supabase, user]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [user, isLoadingUser]);
 
     const value = {
         accessToken,
