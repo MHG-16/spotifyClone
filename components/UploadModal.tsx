@@ -137,7 +137,7 @@ const UploadModal = () => {
           const {
             error: supabaseError
           } = await supabaseClient
-            .from("songgi")
+            .from("song")
             .insert({
               user_id: user.id,
               title: values.title,
