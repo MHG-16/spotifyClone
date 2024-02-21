@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import useUploadModal from "@/hooks/useUploadModal";
 import Modal from "./Modal";
 import Input from "./input/Input";
-import Button from "./Button";
+import Button from "./button/Button";
 import { useUser } from "@/hooks/useUser";
 import { useRouter } from "next/navigation";
 
