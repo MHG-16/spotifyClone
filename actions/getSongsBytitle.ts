@@ -3,7 +3,7 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import getSongs from "./getSongs";
 
-const getSongByTitle = async (title: string): Promise<Song[]> => {
+const getSongsByTitle = async (title: string): Promise<Song[]> => {
     const supabase = createServerComponentClient({
         cookies: cookies
     });
@@ -26,4 +26,4 @@ const getSongByTitle = async (title: string): Promise<Song[]> => {
     return (data as Song[]) || [];
 };
 
-export default getSongByTitle;
+export default getSongsByTitle;
