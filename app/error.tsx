@@ -11,3 +11,5 @@ const Error = () => {
         </Box>
     )
 }
+
+export default Error;
