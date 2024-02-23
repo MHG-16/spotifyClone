@@ -5,7 +5,7 @@ export const stripe = new Stripe(
     {
         apiVersion: "2023-10-16",
         appInfo: {
-            name: "Spotify Clone Video",
+            name: "Spotify Clone",
             version: "0.1.0"
         }
     }
