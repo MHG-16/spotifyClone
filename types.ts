@@ -9,6 +9,7 @@ export interface Song {
     image_path: string;
 }
 
+
 export interface UserDetails {
     id: string;
     first_name: string;
@@ -41,6 +42,10 @@ export interface Price {
     trial_period_days?: number | null;
     metadata?: Stripe.Metadata;
     products?: Product;
+}
+
+export interface ProductWithPrice extends Product {
+    prices?: Price[];
 }
 
 export interface Subscription {
