@@ -107,7 +107,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
   const subscribeModal = useSubscribeModal();
   const onChange = (open: boolean) => {
     if (!open) {
-      subscribeModal.onOpen();
+      subscribeModal.onClose();
     }
   }
   return (
