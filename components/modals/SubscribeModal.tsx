@@ -8,6 +8,7 @@ import Modal from "./Modal";
 import Button from "../button/Button";
 import { useUser } from "@/hooks/useUser";
 import { getStripe } from "@/libs/stripeClient";
+import useSubscribeModal from "@/hooks/useSubscribeModal";
 
 
 interface SubscribeModalProps {
@@ -103,12 +104,18 @@ const Content: React.FC<SubscribeModalProps> = ({
 const SubscribeModal: React.FC<SubscribeModalProps> = ({
   products
 }) => {
+  const subscribeModal = useSubscribeModal();
+  const onChange = (open: boolean) => {
+    if (!open) {
+      subscribeModal.onOpen();
+    }
+  }
   return (
     <Modal 
       title="Only for premium users"
       description="Listen to music with Spotify Premium"
-      isOpen
-      onChange={() => {}}
+      isOpen={subscribeModal.isOpen}
+      onChange={onChange}
     >
       <Content products={products}/>
     </Modal>
