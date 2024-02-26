@@ -36,7 +36,7 @@ Key Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next13-spotify.git
+git clone https://github.com/MHG-16/spotifyClone.git
 ```
 
 ### Install packages
