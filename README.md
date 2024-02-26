@@ -36,7 +36,7 @@ Key Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/MHG-16/spotifyClone.git
+git clone https://github.com/MHG-16/spotifyClone/public/images/hero.png
 ```
 
 ### Install packages
